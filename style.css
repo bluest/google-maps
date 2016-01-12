@@ -19,30 +19,71 @@ html, body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#origin-input{
-  background-color: #fff;
-  font-family: Roboto;
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#right-panel select, #right-panel input {
   font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 500px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+#right-panel {
+	height: 100%;
+	float: right;
+	width: 390px;
+	overflow: auto;
+}
+
+#map {
+	margin-right: 400px;
+}
+
+#origin-input{
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 500px;
 }
 
 #origin-input:focus, {
-  border-color: #4d90fe;
+	border-color: #4d90fe;
 }
 
 #mode-selector {
-  color: #fff;
-  background-color: #4d90fe;
-  margin-left: 12px;
-  padding: 5px 11px 0px 11px;
+	color: #fff;
+	background-color: #4d90fe;
+	margin-left: 12px;
+	padding: 5px 11px 0px 11px;
 }
 
 #mode-selector label {
-  font-family: Roboto;
-  font-size: 13px;
-  font-weight: 300;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+@media print {
+	#map {
+    	height: 500px;
+    	margin: 0;
+    }
+
+    #right-panel {
+    	float: none;
+    	width: auto;
+    }
 }

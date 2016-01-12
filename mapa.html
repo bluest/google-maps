@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<input id="origin-input" class="controls" type="text" placeholder="Onde você está?">
+
+	    <div id="mode-selector" class="controls">
+	    	<input type="radio" name="type" id="changemode-walking" checked="checked">
+	    	<label for="changemode-walking">A pé</label>
+
+	    	<input type="radio" name="type" id="changemode-bicycling">
+	    	<label for="changemode-driving">De bicicleta</label>
+
+	    	<input type="radio" name="type" id="changemode-driving">
+	    	<label for="changemode-driving">De carro</label>
+	    </div>
+	    <div id="right-panel"></div>
+		<div id="map"></div>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECMijWoNLgNHrwmgT2-AW66klkheGOUw&signed_in=true&libraries=places&callback=initMap">
+		</script>
+		<script 
+			type="text/javascript"
+			src="scripts.js">
+		</script>
+	</body>
+</html>
